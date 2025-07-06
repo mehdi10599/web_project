@@ -1,0 +1,901 @@
+﻿@font-face
+{
+    font-family:Yekan;
+    src:url('../fonts/Yekan.ttf');
+}
+/*ریست کد*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    text-decoration:none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*کد اصلی*/
+body
+{
+    font-family:Yekan;
+    font-size:18px;
+    line-height:1.7;
+}
+.content
+{
+    max-width:1220px;
+    margin:0 auto;
+}
+.slider
+{
+    max-width:100%;
+    height: 700px;
+    position:relative;
+    top:0;right:0;
+}
+
+/*================================وسط چین کردن یه دیو با پوزیشن ابسولوت و عرض نامشخص(به صورت رسیپانسیو)ز================================== */
+.menudiv
+{
+    max-width:1220px;
+    position:absolute; 
+    top:0; 
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    z-index:100;
+}
+/*=====================================پرچم ها========================================================*/
+.flags li
+{
+    display:inline-block;
+    padding:7px;
+    border-right:solid 2px white;
+}
+ul.flags:first-child
+{
+    border-left:solid 2px white;
+}
+/*=========================================================منوی ناوبری=================================*/
+.navigate
+{
+    width:100%;
+    height:90px;
+    background-color:#fff;
+    opacity:0.9;
+    box-shadow:0px 2px 13px 2px rgb(37, 37, 37);
+}
+.logo
+{
+    width:15%;
+    float:right;
+    margin: 10px 5% 0 0px;
+}
+.logo img
+{
+    width:100%;
+}
+.navmenu
+{
+    float: right;
+    width: 75%;
+    direction: rtl;
+    margin-right: 5%;
+}
+.nav
+{
+    float:right;
+    padding:28px 0;
+    position:relative;
+    margin-left: 2%;
+    position:relative;
+}
+.nav >a
+{
+    color:#666;
+    font-weight:800;
+    font-size:90%;
+    float:right;
+}
+.nav >a:after
+{
+    font-family: fontawesome;
+    content: "\f107";
+    padding: 2px 10px 0px 10px;
+    float: left;
+    color:#666;
+}
+.nav:hover
+{
+    border-bottom:solid 5px orange;
+}
+.items
+{
+    box-sizing:border-box;
+    position:absolute;
+    top:91px;
+    right:0;
+    visibility:hidden;
+}
+.items >li
+{
+    position:relative;
+}    
+.subitems
+{   
+    box-sizing:border-box;
+    position:absolute;
+    top:0px;
+    right:190px;
+    visibility:hidden;
+}
+.nav:hover .items , .items >li:hover .subitems
+{
+    visibility:visible;
+}
+.items >li,.subitems >li
+{
+    color:#666;
+    background-color:#fff;
+    width:0px;
+    transition-duration:0.5s;
+    height:40px;
+    border-bottom:solid 1px rgba(128, 128, 128, 0.25);
+    border-top:solid 1px rgba(128, 128, 128, 0.25);
+}
+.subitems >li
+{
+    border:solid 1px rgba(128, 128, 128, 0.25);
+    box-sizing:border-box;
+    color:#666;
+    background-color:#fff;
+    width:0px;
+    height:40px;
+}
+    
+.nav:hover .items >li , .items >li:hover .subitems >li
+{
+    width:190px;
+}
+.items >li >a,.subitems >li >a
+{
+    float:right;
+    padding:10px 20px 0 0;
+    color:#666;
+    visibility:hidden;
+}
+
+.nav:hover .items >li >a,.items >li:hover .subitems >li >a
+{
+    visibility:visible;
+}
+.items >li:hover,.subitems >li:hover
+{
+    background-color:#779c27;
+}
+.items >li:hover >a,.subitems >li:hover >a
+{
+    color:#fff;
+}
+.navigate .navmenu .nav:nth-child(3) .items>li:after
+{
+    font-family: fontawesome;
+    content:"\f104";
+    margin: 10px 0px 0px 5px;
+    float: left;
+    color:#666;
+    visibility:hidden;
+}
+.navigate .navmenu .nav:nth-child(3):hover .items>li:after
+{
+    visibility:visible
+}
+
+/*=================================================از اسلایدر به پایین=====================*/
+.subsliderimg
+{
+    width:40%;
+    height:400px;
+    float:right;
+    /*وسط چین کردن  عمودی یک عنصر اینلاین بلاک داخل یک دیو با ارتفاع معین=================*/
+    line-height:400px;
+    text-align: center;
+}
+.subsliderimg img
+{
+    width: 94%;
+    padding: 30px 3%;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    /*=================================================================================*/
+}
+.subslidertxt
+{
+    width:60%;
+    float:left;
+    direction:rtl;
+    margin-top: 40px;
+}
+.subslidertxt >h2
+{
+    font-size:170%;
+    font-weight:700;
+    color:#779c27;
+    margin:20px 0 10px;
+}
+.subslidertxt p
+{
+    color:#666;
+    text-align:justify;
+    padding-right:15px;
+    font-size:90%;
+}
+.call
+{
+    width:49%;
+    display:inline-block;
+}
+.call h2
+{
+    font-size:120%;
+    font-weight:500;
+    color:#779c27;
+    margin:10px 0;
+}
+.call p
+{
+    font-size:75%;
+}
+.sections{
+    width:100%;
+    height:52px;
+    float:right;
+    border-bottom:2px solid rgba(128, 128, 128, 0.40);
+}
+.sections span{
+    float:right;
+    font-size:170%;
+    font-weight:800;
+    border-bottom:solid 2px orange;
+}
+.sectionitems
+{
+    float:right;
+    width:100%;
+    background-color:white;
+    margin-top:30px;
+}
+.expert
+{
+    width:15%;
+    height:200px;
+    float:right;
+    margin:10px .8%;
+    text-align:center;
+    transition-delay:0.1s;
+    transition-duration:0.4s;
+}
+.expert:hover{
+    box-shadow: 0px 0px 4px 1px rgba(21,250,0,0.9);
+}
+.expert img
+{
+    width:70px;
+    height:70px;
+    display:block;
+    margin:15px auto;
+        /*افزودن فیلتر سیاه و سفید به عکس با سی اس اس (در مرورگرهای جدید جواب میده)باید از وبکیت استفاده شود*/
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%); 
+    /*در صورتی که خاصیتی که میخواهیم را ننویسیم ترنزیشن روی ان انجام نمیشود در اینجا همه خواص را انتخاب کردیم all*/
+    transition:all ease-in 0.6s;
+}
+.expert:hover img
+{
+   -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+}	
+.expert span
+{
+    color:#666;
+}
+.doctors
+{
+    width:100%;
+    height:670px;
+    float:right;
+    direction:rtl;
+    background-image:url("../images/transparent.png");
+    background-attachment:fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.doctitr
+{
+    width:100%;
+    height:46px;
+    float:right;
+    border-bottom:2px solid rgba(128, 128, 128, 0.40); 
+}
+.doctitr span
+{
+    float:right;
+    font-size:150%;
+    font-weight:800;
+    border-bottom:solid 3px orange;
+}
+.docimage
+{
+    width:18%;
+    height:380px;
+    background-color:white;
+    margin:65px 1% 0 ;
+    text-align:center;
+    display:inline-block;
+    border-bottom:4px solid #8ab037;
+}
+.docimage:hover img
+{
+    border:solid 3px green;
+}
+.docimage img
+{
+    width:95%;
+    height:170px;
+    display:block;
+    margin:25px auto;
+    border-radius: 50%;
+    box-sizing:border-box;
+}
+.docimage span
+{
+    color:#8ab037;
+    font-size:85%;
+}
+.docimage h2
+{
+    color:#666;
+    font-size:85%;
+}
+.moredoc 
+{
+    width:180px;
+    margin:50px auto 0;
+    text-align:center;
+    background-color:white;
+    direction: rtl; 
+    border-bottom:4px solid #8ab037;
+    transition:all ease 0.5s;
+}
+.moredoc a
+{
+    color:#666;
+}
+.moredoc:hover
+{
+    background-color:#8ab037;
+}
+.moredoc:hover a
+{
+    color:white;
+}
+.allnews
+{
+    direction:rtl;
+}
+.line
+{
+    width:10%;
+    float:right;
+    height:510px;
+    margin-top:90px;
+    position:relative;
+}
+.midline
+{
+    width:50%;
+    height:550px;
+    float:right;
+    position:absolute;
+    border-left:2px solid gray;
+}
+.gerdali
+{
+    width:40px;
+    height:40px;
+    background-color:#8ab037;
+    position:relative;
+    border-radius:50%;
+    margin:120px auto;
+}
+.line>div:nth-child(2)
+{
+    margin:65px auto;
+}
+.dot
+{
+    width:20px;
+    height:20px;
+    background-color:white;
+    border-radius:50%;
+    position:absolute;
+    top:10px;
+    left:10px;
+}
+.lastnews {
+    width: 45%;
+    min-height: 600px;
+    float: right;
+}
+.news
+{
+    width:95%;
+    height:150px;
+    border-radius:5px;
+    margin-bottom:20px;
+    margin-right:5%;
+}
+.lastnews >span
+{
+    color:#8ab037;
+    font-size:150%;
+    font-weight:800;
+    display:block;
+    margin-bottom:40px;
+    border-bottom:4px double rgba(128, 128, 128, 0.40); 
+}
+.news >img
+{
+    width:100px;
+    height:100px;
+    border:2px solid white;
+    box-sizing:border-box;
+    float:left;
+    margin:25px 15px;
+}
+.news >h2
+{
+    color:#8ab037;
+    font-size:90%;
+    font-weight:700;
+    margin:25px 0px 5px 15px;
+        padding: 25px 20px 0 0;
+}
+.news >p
+{
+    color:#666;
+    font-size:73%;
+    font-weight:400;
+    text-align:justify;
+        padding: 0px 20px 0 0;
+}
+.news:hover
+{
+    background-color:#8ab037;
+}
+.news:hover >h2, .news:hover >p
+{
+    color:white;
+}
+.more
+{
+    width:105px;
+    height:35px;
+    border-radius:4px;
+    background-color:white;
+    text-align:center;
+    float:left;
+    position:relative;
+    overflow: hidden;
+}
+.more a
+{
+    color:white;
+    display:inline-block;
+    width:100%;
+    height:100%;
+    font-size:80%;
+    position:relative;
+    z-index:100;
+}
+.effect1
+{
+    width:200px;
+    height:200px;
+    transform:rotate(28deg);
+    background-color:#8ab037;
+    position:absolute;
+    top: 4px;
+    right: 2px;
+    transition:all ease 0.7s;
+}
+.effect2
+{
+    width:200px;
+    height:200px;
+    transform:rotate(-62deg);
+    background-color:#8ab037;
+    position:absolute;
+    top: -171px;
+    right: -91px;
+    transition:all ease 0.7s;
+}
+.more:hover div.effect1
+{
+     top: 37px;
+}
+.more:hover a
+{
+    color:#8ab037;
+}
+.more:hover div.effect2
+{
+    right: -152px;
+}
+.footerback
+{
+    background-color:#666;
+    width:100%;
+    min-height:420px;
+    float:right;
+    margin-top:90px;
+    border-top:4px solid orange;
+    position:relative;
+    z-index:-100;
+}
+.footericons
+{
+    width:240px;    
+    height:70px;
+    margin:-35px auto;
+}
+.socialicons
+{
+    width:70px;
+    height:70px;
+    float:right;
+    background-color:#666;
+    border-radius:50%;
+    margin:0 5px;
+    text-align:center;
+    line-height:52px;
+}
+.socialicons a
+{
+    width:56px;
+    height:56px;
+    background-color:white;
+    border-radius:50%;
+    margin:7px;
+    float:right;
+}
+.footericons div:first-child a:after
+{
+    content:'\f1d8';
+    font-family:fontawesome;
+    font-size:140%;
+    color:#8ab037;
+}
+.footericons div:nth-child(2) a:after
+{
+    content:"\f16d";
+    font-family:fontawesome;
+    font-size:140%;
+    color:#8ab037;
+}
+.footericons div:nth-child(3) a:after
+{
+    content:"\f09a";
+    font-family:fontawesome;
+    font-size:140%;
+    color:#8ab037;
+}
+div.socialicons >a, div.socialicons >a:after
+{
+    transition:all ease .6s;
+}
+ div.socialicons:hover >a:after
+{
+    color:white;
+}
+div.socialicons:hover >a
+{
+    background-color:#8ab037;
+    transform:rotateY(360deg);
+}
+.footerdives
+{
+    width:33%;
+    min-height:200px;
+    float: right;
+    direction:rtl;
+}
+.gap
+{
+    margin-top:50px;
+}
+.gap >div.footerdives:nth-child(2)
+{
+    width:25%;
+}
+.gap >div.footerdives:nth-child(3)
+{
+    width:42%;
+}
+.footerdives ul li:before
+{
+    content: '\f060';
+    font-family: 'FontAwesome';
+    color: #8ab037;
+    font-size:60%;
+    padding-right: 5px;
+    transition:all linear .5s;
+}
+.footerdives ul li a, .footerdives p
+{
+    color:white;
+    padding-right: 5px;
+    font-size: 70%;
+}
+.footerdives ul
+{
+    margin-top:10px;
+}
+ .footerdives p
+{
+    margin-top: 20px;
+    margin-left: 25%;
+    text-align: justify;
+}
+.footerdives ul li
+{
+    width:47%;
+    display:inline-block;
+}
+.footerdives ul li:hover:before
+{
+    padding-right:15px;
+}
+.footerdives span
+{
+    color:white;
+    border-bottom:3px solid orange;
+    padding-bottom: 5px;
+}
+.ftbtnp
+{
+    width:100%;
+    height:90px;
+    text-align:center;
+    float:right;
+    margin-top:25px;
+}
+.footerbottons
+{
+    width:328px;
+    display:inline-block;
+}
+.ftbtn
+{
+    width:150px;
+    height:55px;
+    margin:20px 7px;
+    background-color:#666;
+    border:1px solid white;
+    box-sizing:border-box;
+    border-radius:4px;
+    float:right;
+    transition:all ease 0.5s;
+}
+.ftbtn >a
+{
+    color: white;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+}
+div.ftbtn:hover {
+    margin-top: 5px;
+    background-color: orange;
+    box-shadow: 0px 17px 7px -1px rgba(0, 0, 0, 0.65);
+}
+.copyright {
+    width: 100%;
+    height: 40px;
+    background-color: rgba(0, 213, 65, 0.85);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    direction:rtl;
+    line-height:40px;
+}
+.copyright p:first-child
+{
+    color:white;
+    font-size:85%;
+    float:right;
+    margin-right:35px;
+    vertical-align:middle;
+}
+.copyright p:last-child
+{
+    color:white;
+    font-size:85%;
+    float:left;
+    vertical-align:middle;
+    margin-left:35px;
+}
+.hidden{
+     opacity:0;
+}
+.visible{
+     opacity:1;
+}
+/*کلاس هاس مورد نیاز در جی کوئری===========================*/
+.navigate >i{display:none;}
+.rotate
+{
+    transform:rotate(90deg);
+    transition:all ease .5s;
+}
+.display
+{
+    display:initial;
+}
+.nodisplay
+{
+    display:none;
+}
+.makefix
+{
+    position:fixed;
+    top:0;
+    right:0;
+}
+.flagfix
+{
+    position: fixed;
+    top: 25px;
+    left: 0;
+    z-index: 100;
+}
+
+
+/*=================================================مدیا کوئری ها===========================*/
+@media screen and (max-width:940px)
+{
+            /*استایل منو در حالت همبرگری با مدیا کوئری*/
+    .navigate >i{display:initial;}
+    .navigate .fa-bars,.navigate .fa-language{float:right;font-size:200%;margin:30px 15px 0;color:blue}
+    .navigate .fa-language{float:left;}
+    .logo{float: initial;width: 20%;height:100%;margin: 0px auto;}
+    .navmenu{background-color:white;margin-right:0;display:none;}
+    .nav{float:initial;margin-right: 0%;margin-left:0%;padding:28px;border:1px solid gray;box-sizing:border-box;}
+    .nav >a{margin-right:15px;}
+    nav img{height:100%;}
+    .nav >a:after{display:none;}
+    .nav:hover{border:1px solid gray;}
+    .navigate .navmenu .nav:nth-child(3) .items>li:after,.items >li >a,.subitems >li >a ,.subitems,.items{visibility:visible;}
+    .items{top:56px;width:100%;}
+    .items >li {width:100%;background-color:rgb(127, 253, 111);}
+    .subitems >li{width:100%;background-color:rgb(158, 147, 247);}
+    .nav:hover .items >li , .items >li:hover .subitems >li{width:100%;}
+    .items >li:hover{background-color:rgb(127, 253, 111);}
+    .subitems >li:hover{background-color:rgb(158, 147, 247);}
+    .items >li:hover >a,.subitems >li:hover >a{color:#666;}
+    .subitems{top: 41px;right: 0px;width: 100%;}
+    /*مخفی کردن زیر منوها*/
+    .items, .subitems {display:none;}
+    .flags{width: 70px;height: 90px;position: absolute;top: 90px;left: 0;display:none;}
+    ul.flags:first-child {border-left:none;}
+    .flags li {border: none;display: block;background-color: #fff;padding: 20px;}
+    /*==========================================================================================*/
+    ul.flags{display:none;}
+    .subsliderimg,.subslidertxt{width:100%;}
+    .subsliderimg img{height:95%;}
+    .expert {width: 23%;margin: 10px 1%;}
+    .doctors{height:860px;}
+    .docimage{width:25%;margin:30px 4% 0;}
+    .docimage{height:310px;}
+    .doctors div.docimage:nth-child(5),.doctors div.docimage:nth-child(6){margin:30px 12.5% 0;}
+    .line{display:none;}
+    .lastnews{width:100%;}
+    .footerdives{width:70%;margin:30px 15%;min-height: 130px;}
+    .gap >div.footerdives:nth-child(2),.gap >div.footerdives:nth-child(3) {width: 70%;}
+    .ftbtnp{margin-bottom:60px;}
+    .copyright{height:20px;line-height:20px;}
+    .copyright p:first-child,.copyright p:last-child{font-size:65%;}
+}
+@media screen and (max-width:600px)
+{
+
+    .subslidertxt{height:480px;}
+    .expert {width: 44%;margin: 10px 3%;}
+    .docimage,.doctors div.docimage:nth-child(5),.doctors div.docimage:nth-child(6){width:40%;margin:30px 5% 0;}
+    .doctors{height:1200px;}
+    .footerdives{width:90%;margin:30px 5%;}
+    .gap >div.footerdives:nth-child(2),.gap >div.footerdives:nth-child(3) {width: 90%;}
+    .call{width:85%;display:block;margin:10px auto;}
+    .subslidertxt >h2{font-size:130%;}
+    .subslidertxt p{font-size:75%;}
+    .copyright{height:40px;line-height:20px;}
+    .copyright p:first-child,.copyright p:last-child{float:right;margin-right:50px;}
+}
+@media screen and (max-width:450px)
+{
+
+    .subsliderimg{height:270px;}
+    .subsliderimg img,.subslidertxt{margin-top:65px;}
+    .expert{width:80%;margin:10px 10%;}
+    .docimage,.doctors div.docimage:nth-child(5),.doctors div.docimage:nth-child(6){width:70%;margin:15px 15% 0;}
+    .doctors{height:1810px;}
+    .news{height:290px;}
+    .news >img{margin:30px 10px;}
+    .footerdives ul li{width:90%;}
+    .ftbtnp{margin-bottom: 110px;}
+    .ftbtn{float:initial;margin:10px auto;}
+    .copyright p:first-child,.copyright p:last-child{margin-right:5px;}
+    .footerbottons{width:270px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

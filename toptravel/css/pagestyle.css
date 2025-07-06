@@ -1,0 +1,626 @@
+﻿@font-face {
+    font-family: yekan;
+    src: url("../font/Yekan.ttf");
+}
+html, body, div, form, fieldset, legend, label
+{
+ margin: 0;
+ padding: 0;
+}
+
+table
+{
+ border-collapse: collapse;
+ border-spacing: 0;
+}
+
+th, td
+{
+ text-align: left;
+ vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6, th, td, caption { font-weight:normal; }
+
+img { border: 0; }
+body 
+{
+    font-family:yekan;
+}
+header
+{
+    width: 100%;
+    height: 150px;
+    background-color: #0a0a8a;
+    float:right;
+}
+nav
+{
+    width: 100%;
+    height: 45px;
+    background-color: #f1fcfd;
+    float: right;
+    margin-top: 7px;
+    box-shadow: 0px 0px 76px 8px white;
+}
+.content 
+{
+    width: 100%;
+    background-color:white;
+    float: right;
+
+}
+footer
+{
+    width: 100%;
+    height: 300px;
+    background-color: #0a0a8a;
+    float: right;
+}
+.slider
+{
+    width: 100%;
+    height: 400px;
+    background-color: red;
+    float: right;
+    
+}
+.subslider
+{
+    width:25%;
+    height:120px;
+    background-color:rgba(148,148,148,0.2);
+    float:right;
+    border-left: 0.5px solid black;
+    box-sizing:border-box;
+}
+.specialtourtitle
+{
+    width: 100%;
+    height: 60px;
+    background-color:#D8D8D8;
+    float: right; 
+}
+.specialtourimage
+{
+    width:19%;
+    height:240px;
+    background-color:yellow;
+    float:right;
+    border:1px solid black;
+    margin:0.5% ;
+    box-sizing:border-box;
+    border-top-left-radius:8px;
+    border-top-right-radius:8px;
+}
+.luxurytourtitle
+{
+    width: 100%;
+    height: 60px;
+    background-color:#D8D8D8;
+    float: right;
+}
+.luxurytourimage
+{
+    width:32%;
+    height:220px;
+    background-color:pink;
+    float:right;
+    border:1px solid black;
+    margin:0.5% ;
+    box-sizing:border-box;
+}
+.chartertourtitle
+{
+    width: 100%;
+    height: 60px;
+    background-color: #D8D8D8;
+    float: right;
+}
+.firstbox
+{
+    width: 11%;
+    height: 140px;
+    background-color: #b5b5af;
+    float: right;
+    margin-right:52px;
+    margin-top:35px;
+    margin-bottom:35px;
+    box-sizing: border-box;
+    border-bottom-right-radius:9px;
+    border-top-right-radius:9px;
+    
+}
+.otherbox
+{
+    width: 13.5%;
+    height: 140px;
+    background-color: #FF9800;
+    float: right;
+    box-sizing: border-box;
+    margin-top:35px;
+    margin-bottom:35px;
+}
+.lastbox
+{
+    width: 13.5%;
+    height: 140px;
+    background-color: #FF9800;
+    float: right;
+    border-bottom-left-radius:9px;
+    border-top-left-radius:9px;
+    box-sizing: border-box;
+    margin-top:35px;
+    margin-bottom:35px;
+}
+.sponsers
+{
+    width: 100%;
+    height: 60px;
+    background-color: #D8D8D8;
+    float: right;
+}
+.sponsersimage
+{
+    width: 19%;
+    height: 205px;
+    background-color: #ff005e;
+    float: right;
+    margin: 0.5%;
+    box-sizing: border-box;
+}
+.target
+{
+    width: 49%;
+    height: 300px;
+    background-color: #ebebea;
+    float: right;
+    margin: 0.5%;
+    box-sizing: border-box;
+}
+.telegram
+{
+    width: 49%;
+    height: 300px;
+    background-color: #ebebea;
+    float: right;
+    margin: 0.5%;
+    box-sizing: border-box;
+}
+.register a:link , .register a:visited
+{
+    float:right;
+    display:inline;
+    text-decoration:none;
+    background-color:#f9a11d;
+    margin:1px;
+    padding:5px;
+    box-sizing:border-box;
+    width:90px;
+    height:40px;
+    text-align:center;
+    color:white;
+    border-radius:5px;
+    
+}
+.register a:hover , .register a:active 
+{
+    background-color:#d89837;
+}
+
+.register li
+{
+    list-style-type:none;
+    display:inline;
+    float:right;
+    margin-right:10px;
+}
+
+.hmenu li
+{
+    list-style-type:none;
+    display:inline;
+    float:right;
+    margin-top:15px;
+    margin-right:15px;
+}
+
+.divheader  {
+    margin-top:15px;
+    margin-right:20px;
+}
+.hmenu a:link , .hmenu a:visited
+{
+float:right;   
+text-decoration:none;
+margin-left:3px;
+color:white;
+padding-left:16px;
+box-sizing:border-box;
+font-size:small;
+}
+.hmenu a:hover , .hmenu a:active
+{
+    color:red;
+}
+.hmenu
+{
+    margin-top:23px;
+    margin-right:-27px;;
+}
+header form
+{
+    float:right;
+    margin-top:0px;
+    margin-right:10px;
+    direction:rtl;
+}
+header form input[type="text"]
+{
+    width:190px;
+    height:27px;
+    border-radius:0px 6px 6px 0px;
+}
+header form input[type="button"]
+{
+    width: 55px;
+    height: 33px;
+    border-radius: 6px 0px 0px 6px;
+    background-color: #6b6bfb;
+    margin-right: -7px;
+    margin-top:3px;
+    color:white;
+    border-style:none;
+}
+header img
+{
+    margin-left:35px;
+    margin-top:-16px;
+    
+}
+header p
+{
+    color: white;
+    float: left;
+    margin-top: -6px;
+    margin-left: 37px;
+    font-size: 90%;
+}
+
+nav img 
+{
+    width: 23px;
+    height: 25px;
+    float: right;
+    margin-right: 60px;
+    margin-top: 8px;
+    margin-left: 15px;
+}
+.navmenu li
+{
+    list-style:none;
+    float:right;
+    margin-top:-4px;
+  
+}
+
+.navmenu a:link , .navmenu a:visited
+{
+
+    text-decoration:none;
+   margin-left:15px;
+   
+    color:blue;
+}
+
+.navmenu a:hover
+{
+    color:red;
+}
+.slider img
+ {
+    width: 100%;
+    height: 100%;
+    float: right;
+}
+.subslider img
+ {
+    float:right;
+    margin-top:20px;
+    margin-right:20px;
+    position:relative;
+    left:0px;
+    top:0px;
+    z-index:1;
+}
+.asub
+{
+    width: 243px;
+    height: 50px;
+    color:white;
+    text-decoration: none;
+    text-align:center;
+    background-color: yellow;
+    float: right;
+    margin-top: 35px;
+    margin-right: -20px;
+    padding-right: 40px;
+    padding-top: 12px;
+    box-sizing: border-box;
+    direction: rtl;
+    position:relative;
+    z-index:0;
+}
+.specialtourtitle img
+{
+    float:right;
+    width:40px; 
+    height:40px;
+    margin-right:20px;
+    margin-top:12px;
+}
+.specialtourtitle p
+{
+    float:right;
+    font-size:150%;
+    margin-right:40px;
+    margin-top:12px;
+}
+.tour
+{
+    margin-bottom:25px;
+}
+.specialtourimage img
+{
+    width:100%;
+    height:165px;
+    border-top-left-radius:8px;
+    border-top-right-radius:8px;
+}
+
+
+.specialtourimage a ,.specialtourimage p
+{
+    float:right;
+    margin-right:15px;
+    text-decoration:none;
+}
+.luxurytourtitle img
+{
+    float:right;
+    width:40px; 
+    height:40px;
+    margin-right:20px;
+    margin-top:12px;
+}
+.luxurytourtitle p
+{
+    float:right;
+    font-size:150%;
+    margin-top:12px;
+    margin-right:40px;
+}
+.specialimg
+{
+    width:94%;
+    float:right;
+    border-top:2px solid #bbaeae;
+    margin-top:5px;
+    margin-left:3%;
+    margin-right:3%;
+}
+.luxurytourimage img
+{
+    width:100%;
+    height:100%;
+}
+.luxurylink:link , .luxurylink:visited
+{
+    display:block;
+    text-decoration:none;
+    color:orange;
+    margin-left:40px;
+    margin-bottom:40px;
+}
+.luxurylink:hover,.luxurylink:active
+{
+    text-decoration:underline;
+    color:#bb831c;
+
+}
+.chartertourtitle img 
+{
+    width:40px;
+    height:40px;
+    float:right;
+    margin-top:10px; 
+    margin-right:25px;
+}
+.chartertourtitle p
+{
+    font-size:150%;
+    float:right;
+    margin-right:15px;
+    margin-top:12px;
+}
+.innerfirstbox a
+{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    background-color: #9696ce;
+    text-align: center;
+    margin-top: 58px;
+    margin-left: 14px;
+    border-radius: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: 100%;
+    
+}
+.innerotherbox
+{
+    width:100%; 
+    height:80%;
+    margin-top:10%;
+    
+    border-left:2px solid rgba(181, 67, 30, 0.18);
+}
+.innerotherbox a
+{
+    text-decoration:none;
+    color:white;
+    font-size:107%;
+    margin-top:-10px;
+    float:right;
+    text-align:center;
+}
+.innerlastbox
+{
+    width:100%; 
+    height:80%;
+    margin-top:10%;
+}
+.innerlastbox a
+{
+    text-decoration:none;
+    color:white;
+    font-size:107%;
+    margin-top:-10px;
+    float:right;
+    text-align:center;
+}
+.sponsers img 
+{
+    width:40px;
+    height:40px;
+    float:right;
+    margin-top:10px; 
+    margin-right:25px;
+}
+.sponsers p
+{
+    font-size:150%;
+    float:right;
+    margin-right:15px;
+    margin-top:12px;
+}
+
+.sponsersimage img
+{
+    width:100%;
+    height:100%;
+
+}
+.titr
+{
+    direction:rtl;
+    margin-right:10%;
+    margin-left:5%;
+    width:85%;
+    height:45px;
+    border-bottom:4px solid black;
+    font-size:170%;
+}
+
+.target p
+{
+    margin-right:10%;
+    margin-left:5%;
+    direction:rtl;
+    text-align:justify;
+}
+.telegram img 
+{
+float:right;
+margin-right:40px;
+margin-top:80px;
+}
+.circlea
+{
+
+float: left;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 0;
+    margin-top: 100px;
+    margin-left: 370px;
+    background-color: gray;
+}
+.circleb
+{
+    float: left;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+    margin-top: 65px;
+    margin-left: -20px;
+    background-color: #d2dcd2;
+}
+.circlec
+{
+
+position:relative;
+    float: left;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    z-index: 2;
+    margin-top: 22px;
+    margin-left: -30px;
+    background-color: #fbfbf9;
+}
+.circled
+{
+float: left;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+    margin-top: 65px;
+    margin-left: -24px;
+    background-color: #d2dcd2;
+}
+.circlee
+{
+float: left;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 0;
+    margin-top: 100px;
+    margin-left: -24px;
+    background-color: gray;
+}
+.circlea p
+{
+margin-top:23px;
+margin-left:22px;
+
+}
+.circleb p
+{
+margin-top:41px;
+margin-left:48px;
+}
+.circlec p
+{
+margin-top:59px;
+margin-left:65px;
+}
+.circled p
+{
+margin-top:41px;
+margin-left:56px;
+}
+.circlee p
+{
+margin-top:23px;
+margin-left:33px;
+}

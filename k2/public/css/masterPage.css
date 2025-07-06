@@ -1,0 +1,113 @@
+@font-face {
+	font-family: 'yekan';
+	src: url("../fonts/yekan.ttf") format("truetype"),
+	url("../fonts/yekan.eot?#iefix") format("embedded-opentype");
+}
+
+* {
+	direction: rtl;
+	text-align: right;
+}
+
+a {
+	text-decoration: none;
+	color: #585858;
+}
+
+ul,h3,h4,p{
+	margin: 0;
+	padding: 0;
+}
+
+h3{
+	color: #4c4b4b;
+	font-weight: normal;
+}
+
+li{
+	list-style: none;
+}
+
+body {
+	margin: 0;
+	font-family: yekan,serif;
+}
+
+header{
+	background-color: white;
+}
+
+nav{
+
+}
+.main{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

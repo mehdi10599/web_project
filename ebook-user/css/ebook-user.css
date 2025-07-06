@@ -1,0 +1,757 @@
+﻿@font-face {
+    font-family: yekan;
+    src: url("../fonts/Yekan.ttf");
+}
+html, body, div, form, fieldset, legend, label
+{
+ margin: 0;
+ padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, caption { font-weight:normal; }
+
+img { border: 0; }
+
+body
+{
+    font-family: yekan;
+    background-color:#ebf0f3;
+}
+.center
+{
+    width:100%;
+    max-width:1000px;
+    margin:0 auto;
+}
+header
+{
+    width:100%;
+    height:135px;
+    position:relative;
+    background-color:#3a5795;
+}
+.headerbotton /*قرار دادن کلید ها داخل یک دیو*/
+{
+    float:right;
+    margin:10px 0 0;
+}
+.headerbotton div              /*خصوصیات دکمه های هدر*/
+{
+    
+    width:210px;
+    height:35px;
+    background-color:#5D8FF7;
+    text-align:center;
+    margin:0 0 10px;
+    border-radius:4px;
+}
+.headerbotton div:hover
+{
+    background: linear-gradient(to right, rgba(233,239,245,1) 0%, rgba(16,107,204,1) 100%);
+}
+.headerbotton a /*از بین بردن خط زیر لینک */
+{
+    text-decoration:none;
+    color:white;
+}
+.headerbotton a:first-child:before /*ایکون عضویت*/
+{
+    content:"\f023";
+    font-family:FontAwesome;
+    float:right;
+    color:white;
+    font-size:150%;
+    padding:20px 5px 0 0;
+}
+.headerbotton a:last-child:before /*ابکون ورود*/
+{
+    content:"\f084";
+    font-family:FontAwesome;
+    float:right;
+    color:white;
+    font-size:150%;
+    padding:7px 5px 0 0;/*چرا پدینگ تاپ بالایی فرق کرد؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟*/
+
+}
+
+.headerbotton div p /*تنظیم فاصله متن داخل کلید ها از بالا*/
+{
+    padding-top:4px;
+}
+
+/*=====================================================================متن هدر==============================*/
+.textheader
+{
+    float:right;
+    margin:20px 10px 0 0;
+}
+.textheader p:after
+{
+    content:"\f00c";
+    font-family:fontawesome;
+    color:#D8DDF7;
+    margin:0 9px;
+}
+.textheader p
+{
+    float:right;
+    color:#D8DDF7;
+    font-size:15px;
+}
+/*============================================================================بنر هدر==========================*/
+.himg
+{
+    position:relative;
+}
+header img,footer img
+{
+    width:32%;
+
+    position:absolute;
+     
+}
+/*=======================================================================contact-header=============================*/
+.contact
+{
+    
+    position:absolute;
+    top:70px;
+    left:20px;
+    line-height:2px;
+    
+}
+.contact p:first-child:before
+{
+    content:"\f003";
+    font-family:fontawesome;
+    margin:0 15px 0 0;
+}
+.contact p:nth-child(2):before,.contact p:nth-child(3):before
+{
+    content:"\f095";
+    font-family:fontawesome; 
+    margin:0 15px 0 0;
+}
+.contact p
+{
+    font-size:13px;
+    color:#D8DDF7;
+}
+/*======================================================================================nav menu============================*/
+nav
+{
+    width:100%;
+    min-height:50px;
+    float:right;
+    background-color:#04356c;
+}
+nav li /*راست چین کردن لیست و حذف نق های کنار ان*/
+{
+    float:right;
+    list-style-type:none; 
+}
+nav a /*استایل دهی به متن لینک ها*/
+{
+    text-decoration:none;
+    color:white; 
+}
+nav li div /*استایل دهی به بلوک لینک ها*/
+{
+    height:50px;
+    margin:-16px 0 0 0;
+    padding:0 15px 0;
+    float:right;
+}
+nav li div:hover/*خاصیت هاور بلوک لینک ها*/
+{
+    background-color:rgba(106, 202, 198, 0.57);
+}
+nav p /*تنظیم فاصله عمودی متن لینک*/
+{
+    margin:10px 0 0 0;
+}
+/*====================================================================================منوی کنار=========================*/
+aside
+{
+    width:25%;
+    min-height:1185px;
+    background-color:#3a5795;
+    float:right;
+    box-sizing:border-box;
+}
+aside h2
+{
+    direction:rtl;
+    color:white;
+    margin:25px 0 0;
+    font-size:140%;
+}
+aside h2:after
+{
+    content:"\f02d";
+    font-family:fontawesome;
+    color:white;
+    font-size:100%;
+    float:right;
+    clear:both;
+    margin:0 10px 0;
+    padding-top:5px;
+}
+.asidemenu
+{
+    width:90%;
+
+    margin:30px 5%;
+    direction:rtl;
+}
+.asidemenu div a
+{
+    line-height:28px;
+}
+.menu span:before
+{
+    content:"\f053";
+    font-family:fontawesome;
+    color:white;
+    font-size:70%;
+    
+    margin:7px 10px 4px 0;
+    transition-duration:1s;
+}
+.asidemenu a span
+{
+    width:90%;
+    margin:0 5% 0;
+}
+.menu span{
+    color:white;
+    font-size:90%;
+    
+    margin-left:3px;
+    transition-duration:0.5s;
+}
+.asidemenu >div:hover .menu span{
+    color:orange;
+    margin-right:13px;
+}
+.asidemenu >div:hover .menu span:before
+{
+    color:orange;
+}
+.asidemenu >div:hover a{
+    display:block;
+}
+
+.asidemenu a:before{
+    content:"\f00c";
+    font-family:fontawesome;
+    color:green;
+    font-size:70%;
+    visibility:hidden;
+    
+    margin:7px 15px 0 5px;
+    
+}
+.asidemenu div a{
+    text-decoration:none;
+    font-size:85%;
+    color:white;
+    
+    display:none;
+    transition-duration:0.5s;
+}
+
+.asidemenu >div a:hover{
+    color:#14E789;
+    margin-right:25px;
+}
+.asidemenu >div a:hover:before
+{
+    visibility:visible;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*=================================================================================================content==========================*/
+
+.content
+{
+    width:50%;
+    min-height:1000px;
+    float:right;
+    margin:0 1% 0 ;
+    box-sizing:border-box;
+}
+.search
+{   
+    width:100%;
+    float:right;
+    background-color:red;
+    position:relative;
+}
+.search input
+{
+    width: 99%;
+    height: 45px;
+    float: right;
+    
+    box-shadow: 0px 2px 27px 2px rgba(105, 103, 103, 0.81);
+    border:none;
+    border-radius:5px ; 
+    position:absolute;
+    top:10px; 
+    right:2px; 
+}
+.search input:hover
+{
+    background-color:#ccecf3;
+}
+.search a
+{
+    text-decoration:none;
+    color:white;
+}
+.search div
+{
+    width:20%;
+    height:48px;
+    background-color:blue;
+    float:right;
+    text-align:center;
+    border-radius:5px 0 0 5px;
+    position:absolute;
+    
+    top:10px;
+}
+.search p
+{
+    margin:10px 0 5px 0;
+}
+.search p:after
+{
+    content:"\f002";
+    font-family:fontawesome;
+    color:white;
+    margin:5px 0 5px 25px;
+}
+.slider
+{
+    width:100%;
+    
+    float:right;
+    margin: 70px 2px 2px 2px;
+}
+.lastbook
+{
+    width:98%;
+    height:40px;
+    background-color:white;
+    float:right;
+    margin:20px 3px 0 3px;
+    box-shadow: 2px 3px 20px 0px rgba(87,86,87,0.92);
+}
+.lastbook p
+{
+    float:right;
+    color:red;
+    margin:5px 15px 10px 0;
+    font-size:120%;
+}
+.book
+{
+    width:98%;
+    height:58px;
+    background-color:white;
+    box-shadow:2px 3px 20px 0px rgba(87,86,87,0.92);
+    float:right;
+    border-radius:5px;
+    margin:10px 3px;
+    direction:rtl;
+    line-height:3px;
+}
+.book img
+{
+    width:40px;
+    height:50px;
+    float:right;
+    margin: 4px 7px 4px 15px;
+
+}
+.book a
+{
+    text-decoration:none;
+}
+.book a:hover img /*استفاده از خاصیت هاور لینک برای تغییر خواص عکس؟؟؟؟؟؟؟؟؟؟؟؟؟*/
+{
+    transform:scale(1.08);
+    transition-duration:1s;
+}
+.book a p
+{
+    
+    margin:15px 10px 0;
+    
+}
+.book >p:nth-of-type(2n+1)
+{
+    float:right;
+    margin:15px 5px;
+    font-size:14px;
+}
+.book >p:nth-of-type(2n)
+{
+    float:right;
+    margin:15px 0;
+    color:red;
+    font-size:14px;
+}
+/*===========================================================================================lfet=====================================*/
+
+.left
+{
+    width:23%;
+    float:right;
+    min-height:1185px;
+
+}
+.chanel
+{
+    width: 68%;
+    height: 130px;
+    background-color: white;
+    float: right;
+    margin:10px 16%;
+    position:relative;
+}
+.chanel a:first-child div i,.chanel a:nth-child(2) div i,.chanel a:nth-child(3) div i,.chanel a:nth-child(4) div i
+{
+    font-size:150%;
+    color:white;
+    padding:20% 26%;
+    transition-duration:0.8s;
+    
+}
+
+.chanel a:first-child div:hover,.chanel a:nth-child(2) div:hover,.chanel a:nth-child(3) div:hover,.chanel a:nth-child(4) div:hover
+{
+    transform:rotate(3600deg);
+    
+    background-color:white;
+
+}
+
+.chanel a:first-child div:hover i,.chanel a:nth-child(2) div:hover i,.chanel a:nth-child(3) div:hover i,.chanel a:nth-child(4) div:hover i
+{
+    color:#2BA9E3;
+    
+}
+
+
+.chanel a:first-child div
+{
+    width:31%;
+    height:34%;
+    box-shadow: 3px 4px 8px 1px rgba(87,86,87,0.92);
+    background-color:#2BA9E3;
+    float:right;
+    border-radius:5px;
+    position:absolute;
+    top:65px;
+    left:19%;
+    transition-duration:1s;
+}
+.chanel a:nth-child(2) div
+{
+    width:31%;
+    height:34%;
+    box-shadow: 3px 4px 8px 1px rgba(87,86,87,0.92);
+    background-color:#D5201C;
+    float:right;
+    border-radius:5px;
+    position:absolute;
+    top:65px;
+    left:53%;
+    transition-duration:1s;
+}
+
+.chanel a:nth-child(3) div
+{
+    width:31%;
+    height:34%;
+    box-shadow: 3px 4px 8px 1px rgba(87,86,87,0.92);
+    background-color:#3757A0;
+    float:right;
+    border-radius:5px;
+    position:absolute;
+    top:14px;
+    left:19%;
+    transition-duration:1s;
+}
+
+.chanel a:nth-child(4) div
+{
+    width:31%;
+    height:34%;
+    box-shadow: 3px 4px 8px 1px rgba(87,86,87,0.92);
+    background-color:#AA7E63;
+    float:right;
+    border-radius:5px;
+    position:absolute;
+    top:14px;
+    left:53%;
+    transition-duration:1s;
+}
+
+
+
+
+
+
+
+.download img , .pay img,.e,.e2,.e img, .e2 img
+{
+    text-align:center;
+    width:68%;
+    margin:10px 16%;
+    float:right;
+}
+.e,.e2
+{
+   background-color:white;
+}
+
+/*=====================================================================================footer=========================================*/
+
+footer
+{
+    width:100%;
+    min-height:300px;
+    background-color:#3A5795;
+    float:right;
+    margin:1px;
+    position:relative;
+
+}
+.f
+{
+    direction:rtl;
+    position:relative;
+}
+
+.f1,.f3
+{
+    width:18%;
+    height:40px;
+    float:right;
+    position:absolute;
+    border-bottom:solid 1px white;
+}
+.f1
+{
+    top:10px;
+    right:2%;
+}
+.f3
+{
+    top:10px;
+    right:25%;
+}
+.f1 div,.f3 div
+{
+    float:right;
+    width:60px;
+    height:40px;
+    border-bottom:solid 2px red;
+    position:absolute;
+
+}
+.f1 p, .f3 p
+{
+    color:white;
+}
+.f5 a
+{
+    color:white;
+    text-decoration:none;
+    font-size:13px;
+}
+
+.f2, .f4
+{
+    width:18%;
+    min-height:200px;
+    float:right;
+    position:absolute;
+
+}
+.f2
+{
+    top:50px;
+    right:2%;
+    bottom:100px;
+}
+.f2 p
+{
+    color:white;
+    font-size:12px;
+    text-align:justify;
+}
+.f4 p
+{
+    color:yellow;
+    font-size:13px;
+    text-align:justify;
+}
+.f4
+{
+    top:50px;
+    right:25%;
+}
+.f5
+{
+    width:100%;
+    text-align:center;
+    float:right;
+    position:absolute;
+    bottom:15px;
+    right:0;
+}
+/*0000000000000000000000000000000000000000000*/
+@media screen and (max-width: 1000px) 
+{
+    .f2,.f4,.f1,.f3{width:22%;}
+    
+}
+
+@media screen and (max-width: 870px) 
+{
+    aside h2
+    {
+        font-size:120%;
+        margin:15px 0 0;
+
+    }
+    aside h2:after
+    {
+        font-size:90%;
+
+    }
+    .search p:after 
+    {
+        margin: 5px 0 5px 5px;
+    }
+    .chanel a:nth-child(2) div,.chanel a:nth-child(3) div,.chanel a:nth-child(4) div,.chanel a:first-child div
+     {
+       
+        height: 30%;
+    }
+    .headerbotton div
+     {
+        width: 170px;
+    }
+    .f3,.f4
+     {
+        
+        right: 28%;
+    }
+}
+@media screen and (max-width: 740px) {
+    .left
+    {
+        display:none;
+    }
+    aside {
+        width: 34%;
+    }
+    .content{
+        width:64%;
+
+    }
+    .f2,.f4,.f1,.f3{width:31%;}
+    .f3,.f4{
+        right: 36%;
+    }
+    .textheader{display:none;}
+    header img{
+        width:47%;
+    }
+     footer img {
+        width: 33%;
+    }
+    .headerbotton {
+        float: right;
+        margin: 10px 60px 0 0px;
+    }
+
+}
+@media screen and (max-width: 620px) {
+    aside{display:none;}
+    .content{width:100%;}
+    .f1,.f2,.f3,.f4{width:40%;}
+    .f3, .f4 {right:10px;top:250px;}
+    .f4{top:290px;}
+    footer{min-height:600px;}
+    .himg img {width: 50%;}
+    header .himg img {width: 55%;}
+    nav li div {padding: 0px 5px;}
+    }
+@media screen and (max-width: 490px){
+    .himg{width:90%;float:none;position:absolute;top:20px;left:5%;}
+    header .himg img{width:80%;position:absolute;top:4px;left:10%;}
+    .himg img{width:80%;position:absolute;top:4px;left:10%;}
+    .contact{width:80%;position:absolute;top:85px;left:10%;}
+    .headerbotton{width:90%;position:absolute;top:155px;left:5%;}
+    header{min-height:285px;text-align:center;}
+    .headerbotton div {width: 100%;}
+    .f1,.f2,.f3,.f4{display:none;}
+    footer .contact{width:80%;position:absolute;top:85px;left:31%;}
+    footer{min-height:300px;}
+    nav p{font-size:75%;}
+}
+@media screen and (max-width: 390px){
+    .book > p:nth-of-type(2n+1) {
+        margin: 15px 2px;
+        font-size: 11px;
+    }
+    .book > p:nth-of-type(2n) {
+        float: right;
+        margin: 15px 0px;
+        color: #F00;
+        font-size: 11px;
+    }
+    .search p::after {display:none;}
+    nav p{font-size:65%;}
+    nav li div {
+        padding: 0px 2px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

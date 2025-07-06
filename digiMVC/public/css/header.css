@@ -1,0 +1,273 @@
+@font-face {
+	font-family: 'yekan';
+	src: url("../fonts/yekan.ttf") format("truetype"),
+	url("../fonts/yekan.eot?#iefix") format("embedded-opentype");
+}
+
+* {
+	direction: rtl;
+	text-align: right;
+}
+
+a {
+	text-decoration: none;
+	color: #585858;
+}
+
+ul,h3,p{
+	margin: 0;
+	padding: 0;
+}
+
+h3{
+	color: #4c4b4b;
+	font-weight: normal;
+}
+
+li{
+	list-style: none;
+}
+
+body {
+	margin: 0;
+	font-family: yekan,serif;
+	background-color: #eee;
+}
+
+header{
+	background-color: white;
+}
+
+#header {
+	width: 1200px;
+	height: 90px;
+	margin: 0 auto;
+}
+
+#header_right {
+	width: 750px;
+	height: 90px;
+	float: right;
+}
+
+#header_left {
+	width: 149px;
+	height: 90px;
+	line-height: 120px;
+	float: left;
+}
+
+#header_right_top {
+	height: 40px;
+	line-height: 38px;
+}
+
+#header_right_bottom {
+	height: 40px;
+}
+
+#login_top {
+	width: 25px;
+	height: 25px;
+	display: block;
+	background: url("../images/login.png") no-repeat center;
+	float: right;
+	margin: 5px;
+}
+
+#signup_top {
+	width: 25px;
+	height: 25px;
+	display: block;
+	background: url("../images/register.png") no-repeat center;
+	float: right;
+	margin: 5px;
+}
+
+#login_top_a {
+	float: right;
+	margin-left: 15px;
+}
+
+#signup_top_a {
+	float: right;
+}
+
+#basket_top {
+	width: 190px;
+	height: 40px;
+	float: right;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+#search_top {
+	width: 500px;
+	height: 40px;
+	float: right;
+	position: relative;
+}
+#search_top input{
+	width: 475px;
+	padding-right: 5px;
+	height: 38px;
+	border: 1px solid #e9d9e3;
+	margin-right: 20px;
+	color: #7f5f74;
+	border-radius:  8px;
+}
+#search_top span{
+	width: 42px;
+	height: 42px;
+	position: absolute;
+	top: 0;
+	left: -1px;
+	background: #7e5e74 url("../images/search.png") no-repeat center ;
+	border-radius: 8px 0 0 8px;
+}
+
+#basket_top_right {
+	width: 50px;
+	height: 100%;
+	background: url("../images/bs.png") no-repeat center #007700;
+	float: right;
+}
+
+#basket_top_left {
+	width: 140px;
+	height: 100%;
+	float: right;
+	background-color: #00a000;
+	line-height: 40px;
+}
+
+#basket_top_left a {
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	color: #f9f9f9;
+	text-align: center;
+}
+
+#basket_top_left a span {
+	background-color: #00d400;
+	padding: 0 10px;
+	border-radius: 50%;
+}
+.fontvvs{font-size: 8pt;}
+.fontvs{font-size: 9pt;}
+.fontsm{font-size: 10.3pt;}
+.fontmd{font-size: 11.3pt;}
+.fontlg{font-size: 12.3pt;}
+
+nav{
+	width: 100%;
+	height: 35px;
+	background: #ffddf0;
+	box-shadow: 0 3px 5px #cccccc;
+	border-top: 1px solid #e2d7dd;
+}
+
+#menu_top{
+	width: 1200px;
+	height: 100%;
+	margin: 0 auto;
+}
+#menu_top > ul{
+	height: 100%;
+	position: relative;
+}
+#menu_top > ul > li{
+	list-style: none;
+	display: inline-block;
+	height: 100%;
+	padding: 0 10px;
+}
+.menu_arrow{
+	background: url("../images/arrow-down.png") no-repeat center;
+	display: block;
+	float: left;
+	width: 10px;
+	height: 10px;
+	margin: 12px 5px 0;
+}
+
+#menu_top > ul > li > a{
+	display: inline-block;
+	height: 100%;
+}
+
+.topmenu2{
+	position: absolute;
+	right: 0;
+	top: 35px;
+	background-color: white;
+	box-shadow: 0 2px 5px #96a996;
+	width: 100%;
+	height: 36px;
+	line-height: 33px;
+	font-weight: bold;
+	display: none;
+}
+
+.topmenu2 > li{
+	display: inline-block;
+	padding: 0 15px;
+	height: 100%;
+}
+
+.topmenu2 > li > a{
+	display: inline-block;
+	height: 100%;
+}
+
+.topmenu3{
+	width: 100%;
+	height: 300px;
+	position: absolute;
+	right: 0;
+	background-color: white;
+	border-top: 1px solid #e2d7dd;
+	display: none;
+	z-index: 100;
+}
+
+.topmenu3 > div{
+	width: 25%;
+	height: 100%;
+	border-left: 1px solid #e4e6e4;
+	box-sizing: border-box;
+	float: right;
+}
+
+.topmenu3_col{
+	padding-right: 10px;
+	font-weight: normal;
+}
+
+.topmenu3_col > li{
+	padding-right: 15px;
+}
+
+.topmenu3_col > li:first-child{
+	padding-right: 0;
+	color: #928deb;
+	font-weight: bold;
+}
+.topmenu3 img{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+.active_menu{
+	background-color: #fff;
+	cursor: pointer;
+	box-shadow: 0 -1px 3px #6f6f6f;
+}
+
+.active_menu > a{
+	color: red;
+}
+
+

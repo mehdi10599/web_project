@@ -1,0 +1,281 @@
+.main{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+
+#content{
+	min-height: 300px;
+	background-color: white;
+	margin: 20px 0;
+	letter-spacing: -4px;
+}
+
+.right1{
+	display: inline-block;
+	width: 24%;
+	border: 1px solid #cccccc;
+	letter-spacing: 0;
+	box-sizing: border-box;
+	padding: 1%;
+}
+
+.right_menu > li > a{
+	display: block;
+	border-bottom: 1px dashed #e2d7dd;
+	position: relative;
+	padding-right: 22px;
+}
+
+.right_menu > li > a::before{
+	content: "";
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	background: url("../../public/images/circle.png") no-repeat center;
+	position: absolute;
+	top: 8px;
+	right: 2px;
+	border-radius: 2px;
+}
+
+.right_menu > li:nth-child(2n+1)
+{
+	background-color: #eeeeee;
+}
+
+.left1{
+	display: inline-block;
+	width: 75%;
+	padding: 1%;
+	margin-right: 1%;
+	border: 1px solid #cccccc;
+	letter-spacing: 0;
+	box-sizing: border-box;
+	vertical-align: top;
+	position: relative;
+}
+
+.title{
+	border-bottom: 1px solid #cccccc;
+	font-size: 13pt;
+	background-color: #aff598;
+	padding-right: 15px;
+}
+
+.title a{
+	color: blue;
+	font-size: 11pt;
+}
+
+table.list{
+	width: 100%;
+	border: 1px solid #eeeeee;
+	margin: 10px 0 ;
+}
+
+table.list tr:nth-of-type(2n+1){
+	background-color: #eeeeee;
+}
+
+table.list td{
+	border: 1px solid #eeeeee;
+	text-align: center;
+}
+
+table.list tr:first-of-type td{
+	background-color: #111111;
+	color: white;
+	font-size: 11.5pt;
+}
+
+.btn_green {
+	display: inline-block;
+	padding: 5px 10px;
+	line-height: 24px;
+	background-color: #00a000;
+	color: #FFFFFF;
+	text-align: center;
+	border-radius: 5px;
+	box-shadow: 1px 1px 4px #b8b8b8;
+	font-size: 10pt;
+	cursor: pointer;
+}
+
+a.addcategory{
+	float: left;
+	margin: 5px;
+	padding: 3px 15px;
+}
+
+.row{
+	padding: 10px;
+	margin-top: 5px;
+}
+
+.form_add_cat .row:nth-of-type(2n){
+	background-color: #eeeeee;
+}
+
+.form_add_cat button
+{
+	border: none;
+	float: left;
+	margin: 5px;
+	padding: 3px 20px;
+	font-family: yekan;
+}
+
+.form_add_cat input[type=text]{
+	width: 200px;
+	height: 22px;
+	border: 1px solid #cccccc;
+	border-radius: 5px;
+	padding: 4px;
+	font-family: yekan;
+}
+
+.form_add_cat textarea{
+	width: 500px;
+	height: 250px;
+	border: 1px solid #cccccc;
+	border-radius: 5px;
+	padding: 4px;
+	font-family: yekan;
+	vertical-align: top;
+}
+
+.form_add_cat label{
+	width: 150px;
+	display: inline-block;
+	font-size: 11pt;
+}
+
+.form_add_cat select{
+	width: 208px;
+	font-family: yekan;
+	border: 1px solid #cccccc;
+}
+
+.deletecategory{
+	background-color: red;
+	float: left;
+	margin: 5px;
+	padding: 3px 15px;
+
+}
+
+.span_selected{
+	display: inline-block;
+	margin: 0 5px;
+	background-color: #8a0101;
+	border-radius: 4px;
+	position: relative;
+	padding: 0 20px;
+	color: #eee;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	font-size: 10pt;
+}
+
+.span_selected img{
+	position: absolute;
+	width: 15px;
+	top: -1px;
+	left: -1px;
+	cursor: pointer;
+}
+
+.show_img{
+	position: absolute;
+	top: 120px;
+	left: 13px;
+	border: 1px solid #cccccc;
+	width: 150px;
+	height: 150px;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.show_img img{
+	width: 100%;
+	height: 100%;
+}
+
+#addGallery{
+	width: 100%;
+	height: 40px;
+	margin: 20px 0;
+	background-color: #ffff1e;
+	float: right;
+}
+
+#addGallery >*{
+	float: right;
+}
+
+#addGallery > input[type=file]{
+	margin-top: 10px;
+}
+
+#addGallery >a{
+	margin-right: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
